@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>pterry.ico</ApplicationIcon>
+    <Title>PteroController</Title>
+    <Version>1.0.0.0</Version>
+    <Company>MythicalSystems</Company>
+    <Product>PteroController</Product>
+    <Description>A Pterodactyl Panel desktop app that uses the Pterodactyl Panel API to control everything from inside a desktop app Pterodactyl Panel desktop app that uses the Pterodactyl Panel API to control everything from inside a desktop app</Description>
+    <Copyright>MythicalSystems</Copyright>
+    <PackageProjectUrl>https://github.com/MythicalLTD/PteroController</PackageProjectUrl>
+    <PackageIcon>pterry.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MythicalLTD/PteroController</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>pterodactyl,desktop,controller,app,api</PackageTags>
+    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="pterry.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+	</Reference>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.4" />
+    <PackageReference Include="PteroConsole.NET" Version="1.0.4" />
+	<EmbeddedResource Include="bunifu\Bunifu.Licensing.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.1.5.3.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuButton.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuCheckBox.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuCircleProgress.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuColorTransition.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuFormDock.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuGauge.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuGradientPanel.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuGroupBox.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuLabel.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuPages.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuPanel.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuProgressBar.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuRadioButton.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuRating.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuScrollBar.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuSeparator.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuShadowPanel.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuShapes.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuSlider.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuSnackbar.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuTextBox.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuToggleSwitch.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuToolTip.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuTransition.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.BunifuUserControl.dll" />
+    <EmbeddedResource Include="bunifu\Bunifu.UI.WinForms.Deprecated.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="pterry.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
